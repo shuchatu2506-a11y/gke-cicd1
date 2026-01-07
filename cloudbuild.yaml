@@ -12,14 +12,14 @@ steps:
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/<your_project_id>/gke-repo/flask-image', './app2' ]
-  id: 'Build Docker Image2'
+  id: 'Build Docker Image2.0'
 
   # images:
   # - 'us-central1-docker.pkg.dev/<your_project_id>/gke-repo/quickstart-image'
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/<your_project_id>/gke-repo/flask-image' ]
-  id: 'Push Docker Image2'
+  id: 'Push Docker Image2.0'
 
 
 - name: 'google/cloud-sdk:latest'
